@@ -6,6 +6,4 @@ public class Interactable : MonoBehaviour {
     // Start is called before the first frame update
     [SerializeField] public bool isJekyllInteractable = false;
     [SerializeField] public bool isHydeInteractable = false;
-
-    private bool test = true;
 }
