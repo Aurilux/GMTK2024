@@ -29,7 +29,7 @@ public class PlayerCapabilities : MonoBehaviour {
                     ChangeCharacter();
                 }
                 if (interactionKeyPressed && _activeInteractable != null && _activeInteractable.isJekyllInteractable) {
-
+                    _activeInteractable.onInteract();
                 }
             }
             else { // !_isJekyll, aka isHyde
