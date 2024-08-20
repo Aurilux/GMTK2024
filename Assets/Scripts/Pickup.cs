@@ -20,7 +20,7 @@ public class Pickup : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
-        PlayerCapabilities playerCapabilities = collider.gameObject.GetComponent<PlayerCapabilities>();
+        PlayerCapabilities playerCapabilities = collider.gameObject.GetComponentInParent<PlayerCapabilities>();
         if (playerCapabilities != null) {
             playerCapabilities._numSerums++;
             Destroy(gameObject);

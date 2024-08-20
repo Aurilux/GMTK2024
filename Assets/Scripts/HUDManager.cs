@@ -5,15 +5,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour {
-    // Start is called before the first frame update
-    TextMeshPro textComponent;
-    [SerializeField] PlayerCapabilities playerCapabilities;
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject serumCounter;
+
+    private PlayerCapabilities playerCapabilities;
+    private TextMeshProUGUI textComponent;
 
     void Start() {
-        textComponent = GetComponent<TextMeshPro>();
+        textComponent = serumCounter.GetComponent<TextMeshProUGUI>();
+        playerCapabilities = player.GetComponent<PlayerCapabilities>();
     }
 
-    // Update is called once per frame
     void Update() {
         textComponent.text = playerCapabilities._numSerums.ToString();
     }
