@@ -9,12 +9,18 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D _rb;
     private bool _isFacingRight;
     private bool _isGrounded;
+    private GameObject _jekyllObject;
+    private GameObject _hydeObject;
+    private GameObject _activeCharacter;
 
     // Start is called before the first frame update
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
         _isFacingRight = true;
         _isGrounded = true;
+        _jekyllObject = transform.GetChild(0).gameObject;
+        _hydeObject = transform.GetChild(1).gameObject;
+        _activeCharacter = _jekyllObject;
     }
     
     // FixedUpdate is for physics
@@ -26,14 +32,21 @@ public class PlayerController : MonoBehaviour {
         float xInput = Input.GetAxis("Horizontal");
 
         //If we are facing right and moving left, or facing left and moving right, flip the way the character is facing
-        if ((xInput < 0 && _isFacingRight) || (xInput > 0 && !_isFacingRight)) {
-            FlipFacing();
+        if (xInput != 0f) {
+            _activeCharacter.GetComponent<Animator>().SetBool("Walking", true);
+            if ((xInput < 0 && _isFacingRight) || (xInput > 0 && !_isFacingRight)) {
+                FlipFacing();
+            }
+        }
+        else {
+            _activeCharacter.GetComponent<Animator>().SetBool("Walking", false);
         }
 
         _isGrounded = IsGrounded();
         if (Input.GetButton("Jump") && _isGrounded) {
             _isGrounded = false;
             _rb.AddForce(new Vector2(0f, _jumpForce));
+            _activeCharacter.GetComponent<Animator>().SetBool("Jumping", true);
         }
 
         float movement = xInput * _speed;// * Time.deltaTime;

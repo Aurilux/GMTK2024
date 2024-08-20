@@ -5,6 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour {
     public void onNewGameButton() {
-        SceneManager.LoadScene("Level-1");
+        SceneManager.LoadSceneAsync("Level-1");
     }
 }

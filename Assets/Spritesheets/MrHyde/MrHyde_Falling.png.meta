@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 63cadbdbc7919f140ac12adc046c369d
+guid: 1ff2e49aab6cc13478f1fcdc004a27a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DrJekyll_Run_0
+      name: MrHyde_Falling_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1753a8179fdaac34a9ce1190da3d38d7
-      internalID: 894721339
+      spriteID: 7e302a1c2703801459d1ad1a2e90d0ac
+      internalID: -2133808446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DrJekyll_Run_1
+      name: MrHyde_Falling_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b6c6a27c7c7c974884543de651eddd4
-      internalID: -1166134163
+      spriteID: 32b26d1cc919de541bdc3ba14b478ced
+      internalID: 696552930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DrJekyll_Run_2
+      name: MrHyde_Falling_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a1231fb188b3a943869da652db5ab26
-      internalID: -163126996
+      spriteID: 0d1913ba588e6cb47baa0cad11405b19
+      internalID: -1228323841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DrJekyll_Run_3
+      name: MrHyde_Falling_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,155 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d8afe7c65bf60d47b0d2865a3ec9e4c
-      internalID: 115388639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DrJekyll_Run_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d455e021815cf5946b5f99ddebbd6778
-      internalID: 542702385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DrJekyll_Run_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6d62aa22d2fa2246bb73bf1c56bb018
-      internalID: -2032397614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DrJekyll_Run_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cbba67272a06ff418278b59facfaa0c
-      internalID: -2118879115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DrJekyll_Run_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61cb4f702520aa84a826f66391c7c638
-      internalID: 1475100743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DrJekyll_Run_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca4791a649a16eb4496631fa0f2e7f50
-      internalID: 222365468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DrJekyll_Run_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd38b649581821840873f2fdd9665c8c
-      internalID: -489168933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DrJekyll_Run_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51bc6a80363c7f243b42ef286dc122cb
-      internalID: -667176461
+      spriteID: 62d4d5e3007b695469f6f3ec659c8095
+      internalID: 556716502
       vertices: []
       indices: 
       edges: []
@@ -351,17 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DrJekyll_Run_0: 894721339
-      DrJekyll_Run_1: -1166134163
-      DrJekyll_Run_10: -667176461
-      DrJekyll_Run_2: -163126996
-      DrJekyll_Run_3: 115388639
-      DrJekyll_Run_4: 542702385
-      DrJekyll_Run_5: -2032397614
-      DrJekyll_Run_6: -2118879115
-      DrJekyll_Run_7: 1475100743
-      DrJekyll_Run_8: 222365468
-      DrJekyll_Run_9: -489168933
+      MrHyde_Falling_0: -2133808446
+      MrHyde_Falling_1: 696552930
+      MrHyde_Falling_2: -1228323841
+      MrHyde_Falling_3: 556716502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

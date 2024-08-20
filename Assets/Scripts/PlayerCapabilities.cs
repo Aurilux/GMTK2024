@@ -44,10 +44,12 @@ public class PlayerCapabilities : MonoBehaviour {
         if (_isJekyll) {
             _jekyllObject.SetActive(false);
             _hydeObject.SetActive(true);
+            _jekyllObject.GetComponent<Animator>().SetBool("Switching", true);
         }
         else {
             _jekyllObject.SetActive(true);
             _hydeObject.SetActive(false);
+            _hydeObject.GetComponent<Animator>().SetBool("Switching", true);
         }
         _isJekyll = !_isJekyll;
     }

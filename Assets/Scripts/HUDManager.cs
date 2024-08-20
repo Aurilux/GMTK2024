@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour {
-    // Start is called before the first frame update
     TextMeshPro textComponent;
     [SerializeField] PlayerCapabilities playerCapabilities;
 
@@ -13,7 +12,6 @@ public class HUDManager : MonoBehaviour {
         textComponent = GetComponent<TextMeshPro>();
     }
 
-    // Update is called once per frame
     void Update() {
         textComponent.text = playerCapabilities._numSerums.ToString();
     }
