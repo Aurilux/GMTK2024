@@ -4,7 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour {
+    [SerializeField] GameObject aboutPanel;
+
     public void onNewGameButton() {
-        SceneManager.LoadScene("Level-1");
+        SceneManager.LoadSceneAsync("Level-1");
+    }
+
+    public void onAboutButton() {
+        aboutPanel.SetActive(!aboutPanel.activeSelf);
     }
 }
