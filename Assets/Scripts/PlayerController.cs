@@ -66,18 +66,14 @@ public class PlayerController : MonoBehaviour {
     }
 
     private bool IsGrounded() {
-        return Physics.Raycast(transform.position, Vector3.down, _jekyllObject.GetComponent<SpriteRenderer>().bounds.size.y);
         bool touchingLayer = _rb.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        return touchingLayer && _rb.velocity.y != 0f;
 
         if (touchingLayer) {
             ContactPoint2D[] contactPoints = new ContactPoint2D[50];
             _rb.GetContacts(contactPoints);
             for (int i = 0; i < contactPoints.Length; i++) {
-            Debug.Log("Are we getting here?");
                 ContactPoint2D contactPoint = contactPoints[i];
                 if (contactPoint.normal.Equals(Vector2.up)) {
-            Debug.Log("Are we getting here?2");
                     return true;
                 }
             }
