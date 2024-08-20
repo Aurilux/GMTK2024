@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Interactable : MonoBehaviour {
+public class Interactable : MonoBehaviour {
     [SerializeField] public bool isJekyllInteractable = false;
     [SerializeField] public bool isHydeInteractable = false;
 
-    public abstract void onInteract();
+    public void onInteract() {
+        //do nothing
+    }
 }

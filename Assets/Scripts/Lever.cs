@@ -15,7 +15,7 @@ public class Lever : Interactable {
         isInactive = true;
     }
 
-    public override void onInteract() {
+    public void onInteract() {
         if (isInactive) {
             spriteRenderer.sprite = activeImage;
         }
