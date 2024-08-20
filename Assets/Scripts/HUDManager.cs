@@ -5,11 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour {
-    TextMeshPro textComponent;
-    [SerializeField] PlayerCapabilities playerCapabilities;
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject serumCounter;
+
+    private PlayerCapabilities playerCapabilities;
+    private TextMeshProUGUI textComponent;
 
     void Start() {
-        textComponent = GetComponent<TextMeshPro>();
+        textComponent = serumCounter.GetComponent<TextMeshProUGUI>();
+        playerCapabilities = player.GetComponent<PlayerCapabilities>();
     }
 
     void Update() {
